@@ -3,3 +3,6 @@ VERCEL_TOKEN=""
 
 # Your domain/subdomain
 DOMAIN_NAME=""
+
+# Sub-domain name,like "www"
+SUBDOMAIN=""
