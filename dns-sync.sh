@@ -3,7 +3,8 @@
 source ./dns.config
 
 # 1. Get current IP
-IP=$(curl -s http://whatismyip.akamai.com/)
+#IP=$(curl -s http://whatismyip.akamai.com/)
+IP=$(ip -6 addr show ppp0 |grep "scope global dynamic"|sed -e's/^.*inet6 \([^ ]*\)\/.*$/\1/;t;d')
 echo "$IP"
 
 # 2. Create/update DNS record
