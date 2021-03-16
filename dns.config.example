@@ -4,5 +4,5 @@ VERCEL_TOKEN=""
 # Your domain/subdomain
 DOMAIN_NAME=""
 
-# Sub-domain name,like "www"
-SUBDOMAIN=""
+# Sub-domain name,support multi sub-domains,like "www www2 www3"
+SUBDOMAIN_LIST=""
